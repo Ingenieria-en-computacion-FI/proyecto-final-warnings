@@ -1,0 +1,10 @@
+ORG 0x1000
+STDIN  EQU 0
+STDOUT EQU 1
+
+
+SECTION .text
+
+_start:
+    MOV EAX, STDOUT
+    INT 0x80
